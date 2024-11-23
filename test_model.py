@@ -22,7 +22,8 @@ def test_model_architecture():
     
     # Count parameters
     total_params = sum(p.numel() for p in model.parameters())
-    assert total_params < 100000, f"Model has {total_params} parameters, should be less than 100000"
+    print(f"Model has {total_params} parameters")
+    assert total_params < 25000, f"Model has {total_params} parameters, should be less than 25000"
 
 def test_model_accuracy():
     # Set device to CPU only
