@@ -23,8 +23,8 @@ class SimpleCNN(nn.Module):
         return x
 
 def train_model():
-    # Set device
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # Set device to CPU only
+    device = torch.device("cpu")
     
     # Load MNIST dataset
     transform = transforms.Compose([
