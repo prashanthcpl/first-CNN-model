@@ -39,7 +39,7 @@ def test_model_accuracy():
     # Load model
     model = SimpleCNN().to(device)
     model_path = get_latest_model()
-    model.load_state_dict(torch.load(model_path))
+    model.load_state_dict(torch.load(model_path, weights_only=True))
     model.eval()
     
     correct = 0
