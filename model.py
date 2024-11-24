@@ -26,13 +26,19 @@ def train_model():
     # Set device to CPU only
     device = torch.device("cpu")
     
-    # Load MNIST dataset
-    transform = transforms.Compose([
+    # Load MNIST dataset with augmentation for training
+    train_transform = transforms.Compose([
+        transforms.RandomRotation(15),  # Random rotation up to 15 degrees
+        transforms.RandomAffine(
+            degrees=0,
+            scale=(0.9, 1.1),  # Random scaling between 90% and 110%
+            translate=(0.1, 0.1)  # Random translation up to 10%
+        ),
         transforms.ToTensor(),
         transforms.Normalize((0.1307,), (0.3081,))
     ])
     
-    train_dataset = datasets.MNIST('./data', train=True, download=True, transform=transform)
+    train_dataset = datasets.MNIST('./data', train=True, download=True, transform=train_transform)
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=64, shuffle=True)
     
     # Initialize model
