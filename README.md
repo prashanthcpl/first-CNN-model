@@ -28,4 +28,11 @@ The model is a Convolutional Neural Network (CNN) with:
 
 ## Local Setup
 
-1. Clone the repository: 
+1. Clone the repository:
+
+
+
+## Advanced feature
+- Added a bit of image augmentation
+- predict.py shows 5 sample images and predicted result (run 'python predict.py')
+- visualize_augmentation.py shows sample augmented and original images (run 'python visualize_augmentation.py')
