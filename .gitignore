@@ -36,3 +36,7 @@ logs/
 dist/
 build/
 *.egg-info/ 
+
+#jupyter files
+.ipynb_checkpoints/
+*.ipynb
