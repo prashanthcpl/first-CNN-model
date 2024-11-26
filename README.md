@@ -1,5 +1,7 @@
 # ML Model CI/CD Pipeline
 
+[![ML Pipeline](https://github.com/prashanthcpl/first-CNN-model/actions/workflows/ml-pipeline.yml/badge.svg)](https://github.com/prashanthcpl/first-CNN-model/actions/workflows/ml-pipeline.yml)
+
 A simple CI/CD pipeline for a CNN model trained on MNIST dataset, with automated testing and deployment using GitHub Actions.
 
 ## Project Overview
