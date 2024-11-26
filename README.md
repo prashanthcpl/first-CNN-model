@@ -36,3 +36,5 @@ The model is a Convolutional Neural Network (CNN) with:
 - Added a bit of image augmentation
 - predict.py shows 5 sample images and predicted result (run 'python predict.py')
 - visualize_augmentation.py shows sample augmented and original images (run 'python visualize_augmentation.py')
+
+- Added 3 more relevant and unique tests. 
