@@ -1,5 +1,5 @@
 --find-links https://download.pytorch.org/whl/torch_stable.html
-torch==2.2.1+cpu
+torch==2.4.0+cpu
 torchvision==0.17.1+cpu
 pytest
 matplotlib
